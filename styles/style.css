@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* Colour Palette 
+/ reddish background #801812 
+/ blue social buttons #086FCC
+/ blue shadow #1065B3
+/ yellow #F1FF3D
+/ pink #FF7770
+/ yellow-red #FF2F24
+/ mocha #803C38
+/ red #CC251D					*/
+
+
+/* Mobile First	*/
+
+body {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("../img/bg.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Anton', sans-serif;
+}
+
+main {
+	margin: 1em auto;
+	max-width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+	max-height: 30%;
+	margin: 1em auto;
+	display: flex;
+	justify-content: center;
+}
+
+#logo {
+	max-width: 200px;
+	filter: drop-shadow(2px 2px 15px black);
+}
+
+
+i {
+	color: white;
+	margin: .3em;
+	font-size: 3em;
+	filter: drop-shadow(2px 2px 15px black);
+	margin-bottom: .5em;
+}
+
+
+/* ICON PADDING ADJUSTMENTS */
+
+.fa-envelope::before {
+	padding: 0 9.92px;
+}
+
+.fa-instagram::before {
+	padding: 0 14.92px;
+}
+
+.fa-facebook-square::before {
+	padding: 0 14.92px;
+}
+
+button {
+	width: 100%;
+	font-size: 1em;
+	text-transform: uppercase;
+	background-color: white;
+	border-radius: 5px;
+	border-style: none;
+	padding: .5em;
+	margin: 2em;
+	filter: drop-shadow(2px 2px 15px black);
+}
+
+button a {
+	color: #801812;
+	letter-spacing: .15em;
+}
+
+a {
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #801812;
+}
+
+a:hover {
+	filter: drop-shadow(2px 2px 20px #FF2F24);
+}
+
+button:hover {
+	filter: drop-shadow(2px 2px 15px #FF2F24);
+}
+
+/* MEDIA QUERIES */
+
+/* Phone Portrait Mode */
+
+@media  (max-device-width: 480px) and (orientation: landscape)  {
+    
+    header {
+        margin-top: .5em;
+    }
+    
+    i {
+        font-size: .5em;
+    }
+}
+
+@media only screen and (min-width : 400px) {
+	
+	i {
+	margin: .3em;
+	margin-bottom: .5em;
+}
+	
+}
+
+@media only screen and (min-width: 500px) {
+	
+	header {
+	    margin: 3em auto 0;
+	}
+	
+	i {
+		font-size: 4em;
+		margin: .2em .5em;
+	}
+	
+	button {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (min-width: 565px) {
+	
+	i {
+		margin: .2em .6em;
+		font-size: 5em;
+	}
+	
+	button {
+		margin: 1.5em auto 0 auto;	
+	}
+	
+	#logo {
+		max-width: 400px;
+	}
+	
+}
+
+@media only screen and (min-width: 700px) {
+	
+	main {
+		margin: 5em auto 4em;
+	}
+	
+	i {
+		font-size: 6em;
+		margin: 0;
+	}
+	
+	button {
+		margin-top: 3.5em;
+		max-width: 15em;
+	}
+}
+
+@media only screen and (min-width: 870px) {
+	
+	main {
+		max-width: 65%;
+	}
+	
+	i {
+		margin: .1em;
+	}
+}
+
+@media only screen and (min-width: 1210px) {
+	
+	main {
+		max-width: 50%;
+	}
+}
